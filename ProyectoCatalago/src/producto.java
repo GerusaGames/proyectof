@@ -4,6 +4,12 @@ class producto{
 	private int costo;
 	private String descripcion;
 	public producto(){}
+	public void mostrarDetalles_producto(){
+		System.out.println("Nombre: " + nombre);
+		System.out.println("Sku: "+ sku);
+		System.out.println("Costo: "+ costo + ".00 MXN");
+		System.out.println("Descricpion: " + descripcion);
+	}
 	public void productoSetter(String nom,String des , int sk, int co){
 		nombre = nom;
 		sku = sk;
