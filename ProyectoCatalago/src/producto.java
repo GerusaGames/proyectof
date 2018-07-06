@@ -5,7 +5,7 @@ public class producto{
 	private String descripcion;
 	public producto(){}
         
-	public void mostrarDetalles_producto(){
+	public void mostrarDetalles(){
 		System.out.println("Nombre: " + nombre);
 		System.out.println("Sku: "+ sku);
 		System.out.println("Costo: "+ costo + ".00 MXN");
