@@ -10,7 +10,7 @@ class producto{
 		System.out.println("Costo: "+ costo + ".00 MXN");
 		System.out.println("Descricpion: " + descripcion);
 	}
-	public void productoSetter(String nom,String des , int sk, int co){
+	public producto(String nom,String des , int sk, int co){
 		nombre = nom;
 		sku = sk;
 		costo = co;
