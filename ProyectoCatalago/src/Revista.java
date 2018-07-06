@@ -24,6 +24,18 @@ public class Revista extends producto {
         this.Editorial=editorial;
         this.FechaPublicacion=FechaPublicacion;
         this.NumPaginas=paginas;
-    }   
+    }
+    
+    @Override
+    public void mostrarDetalles(){
+        System.out.println("----------");
+        System.out.println("PRODUCTO: REVISTA");
+        System.out.println("----------");
+        
+        super.mostrarDetalles();
+        System.out.println("Editorial: "+ this.Editorial);
+        System.out.println("Fecha de Publicacion: "+ this.FechaPublicacion);
+        System.out.println("Numero de Paginas: "+ this.NumPaginas);
+	}
     
 }

@@ -26,4 +26,16 @@ public class Libro extends producto{
         this.NumPaginas=paginas;
     }
     
+    @Override
+    public void mostrarDetalles(){
+        System.out.println("----------");
+        System.out.println("PRODUCTO: LIBRO");
+        System.out.println("----------");
+        
+        super.mostrarDetalles();
+        System.out.println("Autor: "+ this.Autor);
+        System.out.println("Editorial: "+ this.Editorial);
+        System.out.println("Numero de Paginas: "+ this.NumPaginas);
+	}
+    
 }
