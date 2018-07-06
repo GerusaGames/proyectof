@@ -18,4 +18,5 @@ public class Revista {
         this.FechaPublicacion=FechaPublicacion;
         this.NumPaginas=paginas;
     }   
+    
 }
