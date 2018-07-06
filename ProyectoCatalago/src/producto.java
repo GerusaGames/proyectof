@@ -1,9 +1,10 @@
-class producto{
+public class producto{
 	private String nombre;
 	private int sku;
 	private int costo;
 	private String descripcion;
 	public producto(){}
+        
 	public void mostrarDetalles_producto(){
 		System.out.println("Nombre: " + nombre);
 		System.out.println("Sku: "+ sku);
@@ -11,10 +12,10 @@ class producto{
 		System.out.println("Descricpion: " + descripcion);
 	}
 	public producto(String nom,String des , int sk, int co){
-		nombre = nom;
-		sku = sk;
-		costo = co;
-		descripcion = des;
+		this.nombre = nom;
+		this.sku = sk;
+		this.costo = co;
+		this.descripcion = des;
 	}
 	public void cambiarNombre(String t){
 		this.nombre = t;
