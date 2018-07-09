@@ -1,6 +1,5 @@
-
-import java.util.Scanner;
-
+import java.awt.Image;
+import java.awt.Toolkit;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,165 +10,140 @@ import java.util.Scanner;
  *
  * @author SGW08
  */
-public class Main {
-    public static void main(String[] args) {
-        Scanner leer=new Scanner(System.in);
-        int leerAhora;
-        
-        
-        do{
-            System.out.println("MENU PRINCIPAL");
-            System.out.println("1. Agregar un producto");
-            System.out.println("2. Buscar producto ");
-            System.out.println("3. Eliminar un producto ");
-            System.out.println("4. Mostrar el catalogo");
-            System.out.println("5. Cargar catalogo");
-            System.out.println("6. Guardar catalogo");
-            System.out.println("7. Salir");
-            leerAhora=Integer.parseInt(leer.nextLine());
-            
-            switch(leerAhora){
-                case 1:
-                    System.out.println("¿QUE PRODUCTO AGREGARAS?");
-                    System.out.println("1. CD");
-                    System.out.println("2. DVD");
-                    System.out.println("3. Libro");
-                    System.out.println("4. Revista");
-                    System.out.println("5. Regresar");
-                    leerAhora=Integer.parseInt(leer.nextLine());
-                    do{
-                        switch(leerAhora){
-                            case 1:
-                            
-                                break;
-                            
-                            case 2:
-                            
-                                break;
-                        
-                            case 3:
-                            
-                                break;
-                            
-                            case 4:
-                            
-                                break;
-                            
-                            case 5:
-                            
-                                break;
-                    }
-                    }while(leerAhora!=5);
-                    break;
-                    
-                case 2:
-                    System.out.println("¿COMO DESEAS BUSCAR?");
-                    System.out.println("1. NOMBRE");
-                    System.out.println("2. ID");
-                    System.out.println("3. Regresar");
-                    leerAhora=Integer.parseInt(leer.nextLine());
-                    do{
-                        switch(leerAhora){
-                            case 1:
-                            
-                                break;
-                            case 2:
-                            
-                                break;
-                            case 3:
-                            
-                                break;
-                    }
-                    }while(leerAhora!=3);
-                    break;
-                    
-                case 3:
-                    System.out.println("¿ELIMINAR POR?");
-                    System.out.println("1. NOMBRE");
-                    System.out.println("2. ID");
-                    System.out.println("3. Regresar");
-                    leerAhora=Integer.parseInt(leer.nextLine());
-                    do{
-                        switch(leerAhora){
-                            case 1:
-                            
-                                break;
-                            case 2:
-                            
-                                break;
-                            case 3:
-                            
-                                break;
-                    }
-                    }while(leerAhora!=3);
-                    
-                    break;
-                    
-                case 4:
-                    System.out.println("¿MOSTRAR POR?");
-                    System.out.println("1. NOMBRE");
-                    System.out.println("2. ID");
-                    System.out.println("3. Regresar");
-                    leerAhora=Integer.parseInt(leer.nextLine());
-                    do{
-                        switch(leerAhora){
-                            case 1:
-                            
-                                break;
-                            case 2:
-                            
-                                break;
-                            case 3:
-                            
-                                break;
-                    }
-                    }while(leerAhora!=3);
-                    
-                    break;
-                    
-                case 5:
-                    System.out.println("MENU CARGAR CATALOGO");
-                    System.out.println("1. INGRESAR EL NOMBRE");
-                    System.out.println("2. Regresar");
-                    leerAhora=Integer.parseInt(leer.nextLine());
-                    do{
-                        switch(leerAhora){
-                            case 1:
-                            
-                                break;
-                            case 2:
-                            
-                                break;
-                    }
-                    }while(leerAhora!=2);
-                    
-                    break;
-                    
-                case 6:
-                    System.out.println("MENU GUARDAR CATALOGO");
-                    System.out.println("1. INGRESAR EL NOMBRE");
-                    System.out.println("2. Regresar");
-                    leerAhora=Integer.parseInt(leer.nextLine());
-                    do{
-                        switch(leerAhora){
-                            case 1:
-                            
-                                break;
-                            case 2:
-                            
-                                break;
-                    }
-                    }while(leerAhora!=2);
-                    
-                    break; 
-                    
-                case 7:
-                    
-                    
-                    break;  
-            }
+public class Main extends javax.swing.JFrame {
 
-        }while(leerAhora!=7);
+    /**
+     * Creates new form Main
+     */
+    public Main() {
+        initComponents();
+        this.setLocationRelativeTo(null);
     }
-   
+     public Image getIconUAM() {
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("Img/IconUAM.png"));
+        return retValue;
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jButton1Salir = new javax.swing.JButton();
+        jLabel2Titulo = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        jRadioButton1.setText("jRadioButton1");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setIconImage(getIconUAM());
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1Salir.setBackground(new java.awt.Color(255, 0, 0));
+        jButton1Salir.setText("Salir");
+        jButton1Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1SalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 430, 60, 20));
+
+        jLabel2Titulo.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
+        jLabel2Titulo.setText("¿Que deseas hacer?");
+        getContentPane().add(jLabel2Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jButton1.setText("1.Agregar un Producto");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+
+        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jButton2.setText("2.Buscar Producto");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jButton3.setText("3.Eliminar un Producto");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+
+        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jButton4.setText("4.Mostrar el Catalogo");
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
+
+        jButton5.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jButton5.setText("5.Cargar el Catalogo");
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+
+        jButton6.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jButton6.setText("6.Guardar Catalogo");
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Fondo4.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 446, 470));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1SalirActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jButton1SalirActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Main().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton1Salir;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2Titulo;
+    private javax.swing.JRadioButton jRadioButton1;
+    // End of variables declaration//GEN-END:variables
 }
