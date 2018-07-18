@@ -113,7 +113,7 @@ public class OPC1 extends javax.swing.JFrame {
 
     private void jButton5RegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5RegresarActionPerformed
         // TODO add your handling code here:
-        AMAIN menu = new AMAIN();
+        MAIN menu = new MAIN();
         menu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton5RegresarActionPerformed
