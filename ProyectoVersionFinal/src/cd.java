@@ -1,4 +1,3 @@
-
 import java.util.*;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,7 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class cd extends producto implements Serializable{
+class cd extends producto implements Serializable{
 	public String autor;
 	public String interprete;
 	public int numeroCanciones;
@@ -21,8 +20,8 @@ public class cd extends producto implements Serializable{
 		this.numeroCanciones = nc;
 		this.genero = g;
 	}
-	public cd (String nom , String des ,int sk, int costo, String a, String c, int nc , String g){
-		super(nom,des,sk,costo);
+	public cd (String nom , String des ,int sk, int co, String a, String c, int nc , String g){
+		super(nom,des,sk,co);
 		this.autor = a;
 		this.interprete = c;
 		this.numeroCanciones = nc;

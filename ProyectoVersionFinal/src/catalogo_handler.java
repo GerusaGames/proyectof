@@ -1,4 +1,3 @@
-
 import java.util.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -13,7 +12,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class catalogo_handler{
+class catalogo_handler{
 
 	//VARIABLES MAS IMPORTANTES
 	private String nombreCatalogo;
@@ -24,8 +23,11 @@ public class catalogo_handler{
 	public catalogo_handler(String s){
 		this.nombreCatalogo = s;
 	}
-        public catalogo_handler(ArrayList p){
-            this.productos=p;
+        public catalogo_handler(){}
+        
+        //METODOS DE CLASE catalogo_handler
+        public void CambiarNombre(String s){
+            this.nombreCatalogo=s;
         }
 
 	//METODOS DE PRODUCTOS
@@ -35,10 +37,30 @@ public class catalogo_handler{
 	public void añadirProducto(producto p){
 		productos.add(p);
 	}
+
 	public void añadirNuevoCd(String nom , String des ,int sk, int co, String a, String c, int nc , String g , int cantidad){
 		cd nuevoCD = new cd(nom , des , sk,  co,  a, c,  nc , g);
 		for (int i = 0; i<cantidad;i++) {
 			añadirProducto(nuevoCD);
+		}
+	}
+	public void añadirNuevoDvd(String nom , String des ,int sk, int co, String dir, String prod, String dist , int d, String g, int cantidad){
+		//PRODUCTO:nombre-descripcion-sku-costo || DVD:director-productor-distribuidora-duracion-genero
+		dvd nuevoDVD = new dvd(nom,des,sk,co,dir,prod,dist,d,g);
+		for (int i=0; i<cantidad;i++ ) {
+			añadirProducto(nuevoDVD);
+		}
+	}
+	public void añadirNuevaRevista(String nom,String des , int sk, int co,String editorial, String fechaPublicacion, int paginas , int cantidad){
+		revista nuevaRevista = new revista(nom,des,sk,co,editorial,fechaPublicacion,paginas);
+		for (int i= 0; i<cantidad; i++) {
+			añadirProducto(nuevaRevista);
+		}
+	}
+	public void añadirNuevoLibro(String nom,String des , int sk, int co,String autor, String editorial, int paginas, int cantidad){
+		libro nuevoLibro = new libro(nom,des,sk,co,autor,editorial,paginas);
+		for (int i = 0; i<cantidad; i++) {
+			añadirProducto(nuevoLibro);
 		}
 	}
 

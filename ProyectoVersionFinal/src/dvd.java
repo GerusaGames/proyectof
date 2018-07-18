@@ -1,8 +1,5 @@
-
-
-import java.io.Serializable;
 import java.util.*;
-public class dvd extends producto implements Serializable{
+class dvd extends producto{
 	private String director;
 	private String productor;
 	private String distribuidora;
@@ -12,7 +9,12 @@ public class dvd extends producto implements Serializable{
 	
 	public dvd(){}
 	public dvd(String nom , String des ,int sk, int co, String dir, String prod, String dist , int d, String g){
-
+		super(nom ,des ,sk, co);
+		this.director = dir;
+		this.productor = prod;
+		this.distribuidora = dist;
+		this.duracion = d;
+		this.genero = g;
 	}
 	@Override
 	public void mostrarDetalles(){
